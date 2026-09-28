@@ -26,9 +26,11 @@
   <p class="absolute left-[50px] top-[171px] w-[1820px] font-onest text-body-3 text-neutral-0">Everyone scores your salary. Noor scores your whole financial life — and sets the limit on what it sees.</p>
 
   <!-- Left: today → Noor -->
-  <noor-fill-grey class="absolute left-[50px] top-[270px] w-[880px]" title="Today: a statement in, a minimum limit out">— A salary certificate + a bureau score<br>— One bank's view of one paycheck, while expats hold accounts across 2–3 banks<br>— Thin or empty files: declined or given the minimum limit</noor-fill-grey>
-  <span class="icon-32 absolute left-[474px] top-[512px]"><img src="icons/arrow-down-24.svg" alt=""></span>
-  <noor-fill-sky class="absolute left-[50px] top-[560px] w-[880px]" title="Noor: every card, every bank via Open Finance">— Balances &amp; assets across every bank<br>— Income patterns — salary, side income, remittances<br>— Spending behaviour &amp; live obligations — down to dinners at premium restaurants<br>— Updated with every transaction — not once a year</noor-fill-sky>
+  <div class="absolute left-[50px] top-[270px] w-[880px] flex flex-col items-center gap-[16px]">
+    <noor-fill-grey class="w-full" title="Today">A client only needs to provide a transaction statement — based on it, a loan is issued at the entry limit of AED 1,000.</noor-fill-grey>
+    <span class="icon-32"><img src="icons/arrow-down-24.svg" alt=""></span>
+    <noor-fill-sky class="w-full" title="Noor">As the client connects Open Finance and additional data, Noor sees their transactions across any card — restaurant dinners, taxis, food purchases and more — understands they can afford more and gives them a higher limit.</noor-fill-sky>
+  </div>
 
   <!-- Right: limit ladder (diagram) -->
   <p class="absolute left-[1000px] top-[270px] font-onest font-semibold text-header-4 text-terracota-40">How the limit grows</p>
