@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noor — Credit views</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="tw-config.js"></script>
+<script src="components.js"></script>
+<style>
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    body{background:#fff!important;padding:0!important;}
+    @page{size:1920px 1080px;margin:0;}
+  }
+  .bl{padding-left:20px;text-indent:-20px;}
+</style>
+</head>
+<body class="bg-[#D9D9D9] font-onest flex flex-col items-center p-10">
+
+<!-- 4 credit views: columns = stages, rows = data available / what Noor learns / outcome -->
+<section class="relative w-[1920px] h-[1080px] bg-white overflow-hidden shrink-0">
+  <noor-header>Open Finance + Advanced Scoring</noor-header>
+
+  <!-- column dividers + arrows -->
+  <div class="absolute left-[495px] top-[200px] w-[1px] h-[780px] bg-neutral-90"></div>
+  <div class="absolute left-[960px] top-[200px] w-[1px] h-[780px] bg-neutral-90"></div>
+  <div class="absolute left-[1425px] top-[200px] w-[1px] h-[780px] bg-neutral-90"></div>
+  <span class="icon-32 absolute left-[475px] top-[336px] bg-white"><img src="icons/arrow-right-24.svg" alt=""></span>
+  <span class="icon-32 absolute left-[940px] top-[336px] bg-white"><img src="icons/arrow-right-24.svg" alt=""></span>
+  <span class="icon-32 absolute left-[1405px] top-[336px] bg-white"><img src="icons/arrow-right-24.svg" alt=""></span>
+
+  <!-- row labels (column 1, as in source) -->
+  <p class="absolute left-[50px] top-[412px] font-onest text-label-5 text-neutral-50">DATA AVAILABLE</p>
+  <p class="absolute left-[50px] top-[630px] font-onest text-label-5 text-neutral-50">WHAT NOOR LEARNS</p>
+  <p class="absolute left-[50px] top-[866px] font-onest text-label-5 text-neutral-50">CUSTOMER / CREDIT OUTCOME</p>
+
+  <!-- 01 -->
+  <div class="absolute left-[50px] top-[200px] w-[425px]">
+    <p class="font-onest font-semibold text-body-2 text-terracota-40">01</p>
+    <p class="font-onest font-semibold text-body-2 text-neutral-0 mt-[4px]">Basic financial view</p>
+    <noor-pill-l-stroke class="mt-[40px]">Market data</noor-pill-l-stroke>
+  </div>
+  <div class="absolute left-[50px] top-[444px] w-[425px] flex flex-col gap-[4px] font-onest text-label-1 text-neutral-0">
+    <p class="bl">• Transaction statements</p>
+    <p class="bl">• Application data</p>
+  </div>
+  <div class="absolute left-[50px] top-[662px] w-[425px] h-[172px] rounded-[24px] bg-neutral-95 px-[32px] flex items-center font-onest font-medium text-body-5 text-neutral-0">Initial view of income, spending and affordability</div>
+  <p class="absolute left-[50px] top-[898px] w-[425px] font-onest font-semibold text-body-2 text-neutral-0">Illustrative entry access<br>(e.g., up to AED 1,000*)</p>
+
+  <!-- 02 -->
+  <div class="absolute left-[515px] top-[200px] w-[425px]">
+    <p class="font-onest font-semibold text-body-2 text-terracota-40">02</p>
+    <p class="font-onest font-semibold text-body-2 text-neutral-0 mt-[4px]">Connected financial view</p>
+    <noor-pill-l-stroke class="mt-[40px]">Connected data</noor-pill-l-stroke>
+  </div>
+  <div class="absolute left-[515px] top-[444px] w-[425px] flex flex-col gap-[4px] font-onest text-label-1 text-neutral-0">
+    <p class="bl">• Open Finance: consented live access to accounts across UAE banks</p>
+    <p class="bl">• AECB obligations and arrears</p>
+  </div>
+  <div class="absolute left-[515px] top-[662px] w-[425px] h-[172px] rounded-[24px] bg-neutral-95 px-[32px] flex items-center font-onest font-medium text-body-5 text-neutral-0">Fuller cash-flow position plus existing liabilities</div>
+  <p class="absolute left-[515px] top-[898px] w-[425px] font-onest font-semibold text-body-2 text-terracota-40">Improved eligibility and higher potential limits</p>
+
+  <!-- 03 -->
+  <div class="absolute left-[980px] top-[200px] w-[425px]">
+    <p class="font-onest font-semibold text-body-2 text-terracota-40">03</p>
+    <p class="font-onest font-semibold text-body-2 text-neutral-0 mt-[4px]">Behavioural view</p>
+    <noor-pill-l-stroke-red class="mt-[40px]">Product behaviour</noor-pill-l-stroke-red>
+  </div>
+  <div class="absolute left-[980px] top-[444px] w-[425px] flex flex-col gap-[4px] font-onest text-label-1 text-neutral-0">
+    <p class="bl">• PFM behaviour, device intelligence and digital footprint</p>
+    <p class="bl">• Connected sources: bills, receipts, remittances, e-commerce and everyday apps</p>
+  </div>
+  <div class="absolute left-[980px] top-[662px] w-[425px] h-[172px] rounded-[24px] bg-sky-90 px-[32px] flex items-center font-onest font-medium text-body-5 text-neutral-0">How the customer manages money beyond traditional banking data</div>
+  <p class="absolute left-[980px] top-[898px] w-[425px] font-onest font-semibold text-body-2 text-terracota-40">Better risk-based pricing and more relevant offers</p>
+
+  <!-- 04 -->
+  <div class="absolute left-[1445px] top-[200px] w-[425px]">
+    <p class="font-onest font-semibold text-body-2 text-terracota-40">04</p>
+    <p class="font-onest font-semibold text-body-2 text-neutral-0 mt-[4px]">Proprietary credit view</p>
+    <noor-pill-l class="mt-[40px]">Proprietary lending data</noor-pill-l>
+  </div>
+  <div class="absolute left-[1445px] top-[444px] w-[425px] flex flex-col gap-[4px] font-onest text-label-1 text-neutral-0">
+    <p class="bl">• Internal repayment history</p>
+    <p class="bl">• Observed lending behaviour with Noor</p>
+  </div>
+  <div class="absolute left-[1445px] top-[662px] w-[425px] h-[172px] rounded-[24px] bg-sky-90 px-[32px] flex items-center font-onest font-medium text-body-5 text-neutral-0">Actual credit performance earned only through lending</div>
+  <p class="absolute left-[1445px] top-[898px] w-[425px] font-onest font-semibold text-body-2 text-terracota-40">Personalised access based on proprietary insight</p>
+
+  <noor-footer n="19">the scoring engine</noor-footer>
+</section>
+
+</body>
+</html>
