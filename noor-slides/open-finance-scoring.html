@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noor — Open Finance scoring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="tw-config.js"></script>
+<script src="components.js"></script>
+<style>
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    body{background:#fff!important;padding:0!important;}
+    @page{size:1920px 1080px;margin:0;}
+  }
+</style>
+</head>
+<body class="bg-[#D9D9D9] font-onest flex flex-col items-center p-10">
+
+<!-- Open Finance + advanced scoring: today vs Noor + limit ladder -->
+<section class="relative w-[1920px] h-[1080px] bg-white overflow-hidden shrink-0">
+  <noor-header>More data, higher limit</noor-header>
+
+  <!-- Today vs Noor -->
+  <div class="absolute left-[50px] top-[190px] flex items-stretch justify-between w-[1820px]">
+    <noor-fill-grey class="w-[898px]" title="Today">You hand over a transaction statement — you get a credit card at the minimum limit.</noor-fill-grey>
+    <noor-fill-sky class="w-[898px]" title="Noor">Sees your transactions on every card via Open Finance — dinners at premium restaurants included — understands you can pay more and gives you a higher limit.</noor-fill-sky>
+  </div>
+
+  <!-- Limit ladder (diagram) -->
+  <p class="absolute left-[50px] top-[430px] font-onest font-semibold text-header-4 text-terracota-40">How the limit grows</p>
+  <div class="absolute left-[50px] top-[502px] grid grid-cols-3 gap-x-[40px] w-[1820px]">
+    <!-- step 1 -->
+    <div class="flex flex-col">
+      <div class="h-[250px] flex flex-col justify-end">
+        <p class="font-onest font-medium text-header-4 text-neutral-0 mb-[16px]">AED 1,000</p>
+        <div class="h-[90px] rounded-[24px] bg-sky-80"></div>
+      </div>
+      <p class="font-onest font-semibold text-body-2 text-neutral-0 mt-[24px]">Transaction statements</p>
+      <p class="font-onest text-label-1 text-neutral-40 mt-[8px]">No Open Finance? Upload statements and start at the entry limit.</p>
+    </div>
+    <!-- step 2 -->
+    <div class="flex flex-col">
+      <div class="h-[250px] flex flex-col justify-end">
+        <p class="font-onest font-medium text-header-4 text-neutral-0 mb-[16px]">Higher limit</p>
+        <div class="h-[140px] rounded-[24px] bg-sky-55"></div>
+      </div>
+      <p class="font-onest font-semibold text-body-2 text-neutral-0 mt-[24px]">+ Open Finance</p>
+      <p class="font-onest text-label-1 text-neutral-40 mt-[8px]">Every card, every bank — real income and spending, updated with every transaction.</p>
+    </div>
+    <!-- step 3 -->
+    <div class="flex flex-col">
+      <div class="h-[250px] flex flex-col justify-end">
+        <p class="font-onest font-medium text-header-4 text-neutral-0 mb-[16px]">Maximum limit</p>
+        <div class="h-[190px] rounded-[24px] bg-sky-40"></div>
+      </div>
+      <p class="font-onest font-semibold text-body-2 text-neutral-0 mt-[24px]">+ Credit bureau &amp; social media</p>
+      <p class="font-onest text-label-1 text-neutral-40 mt-[8px]">A bureau report and social profiles complete the picture.</p>
+    </div>
+  </div>
+
+  <noor-conclusion class="absolute left-[50px] top-[912px] w-[1820px]">Unique advantage: Open Finance + advanced scoring.</noor-conclusion>
+  <noor-footer n="18">the scoring engine</noor-footer>
+</section>
+
+</body>
+</html>
