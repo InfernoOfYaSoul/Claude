@@ -1,0 +1,49 @@
+{
+  "max": {
+    "firstName": "Max",
+    "lastName": "Avtukhov",
+    "role": "Co-founder & CEO",
+    "roleShort": "CEO",
+    "company": "Noor",
+    "photo": "max.jpg",
+    "vcf": "Max-Avtukhov-Noor.vcf",
+    "bio": [
+      "Co-founded and led Yandex Lavka — Q‑commerce in 16 minutes, from zero to $4B+ revenue",
+      "Founded Yango Tech, B2B AI retail platform across 15 countries",
+      "Co-founded YNDX Family — 15K+ tech alumni network"
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/CHANGE-ME",
+      "telegram": "https://t.me/CHANGE_ME",
+      "whatsapp": "",
+      "x": "",
+      "email": "max@CHANGE-ME.com",
+      "phone": "",
+      "website": "https://CHANGE-ME.com"
+    }
+  },
+  "sameh": {
+    "firstName": "Sameh",
+    "lastName": "Al Qubaisi",
+    "role": "Co-founder & Executive Chairman",
+    "roleShort": "Executive Chairman",
+    "company": "Noor",
+    "photo": "sameh.jpg",
+    "vcf": "Sameh-Al-Qubaisi-Noor.vcf",
+    "bio": [
+      "UAE national, career banker and government official",
+      "Built FAB Global Markets ($3.6B+) and NBAD Asia ($38M, HKMA license)",
+      "DG Economic Affairs, Abu Dhabi DED: ADX restructuring, IPO Fund, CEPA Türkiye",
+      "Founding board Wio Bank. Founding N24 Capital today"
+    ],
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/CHANGE-ME",
+      "telegram": "https://t.me/CHANGE_ME",
+      "whatsapp": "",
+      "x": "",
+      "email": "sameh@CHANGE-ME.com",
+      "phone": "",
+      "website": "https://CHANGE-ME.com"
+    }
+  }
+}
